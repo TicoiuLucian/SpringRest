@@ -10,4 +10,11 @@ public class MyFirstRestAppApplication {
 		SpringApplication.run(MyFirstRestAppApplication.class, args);
 	}
 
+
+	//TODO Liviu : prepare a set of data to be inserted in DB every time we start the app (Search import.sql or data.sql on google)
+
+	//TODO Sebastian : Create Dealership flow
+
+	//TODO Victor : log every method
+
 }

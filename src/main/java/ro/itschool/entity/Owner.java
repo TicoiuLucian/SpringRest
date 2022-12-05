@@ -35,3 +35,6 @@ public class Owner {
 
 
 }
+
+//TODO DANI: add more attributes to owner
+//TODO DANI: add Address attribute as OneToOne

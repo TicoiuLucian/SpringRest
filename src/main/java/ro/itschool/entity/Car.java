@@ -23,4 +23,6 @@ public class Car {
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @ToString.Exclude
     private Owner owner;
+
+    //TODO: Add list of carOptionals -> Roxana (OneToMany)
 }
