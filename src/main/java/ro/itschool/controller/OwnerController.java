@@ -15,11 +15,16 @@ public class OwnerController {
     @Autowired
     private OwnerRepository ownerRepository;
 
+    //  @PostMapping
+    // public void saveOwner(@RequestBody Owner owner) {
+    //     for (Car car : owner.getCars()) {
+    //         car.setOwner(owner);
+    //     }
+    //     ownerRepository.save(owner);
+    //  }
+
     @PostMapping
-    public void saveOwner(@RequestBody Owner owner) {
-        for (Car car : owner.getCars()) {
-            car.setOwner(owner);
-        }
+    public void saveOwner(@RequestBody Owner owner){
         ownerRepository.save(owner);
     }
 

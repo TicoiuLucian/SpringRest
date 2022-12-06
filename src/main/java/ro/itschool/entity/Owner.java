@@ -20,9 +20,13 @@ public class Owner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
 
+    private Long age;
+    private Long SSN;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
 
     @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Car> cars = new ArrayList<>();
