@@ -66,6 +66,20 @@ public class CarController {
         logger.log(Level.INFO,"Method getCarByManufacturerAndModelName was used!");
         return carRepository.findByManufacturerAndModel(manufacturer, model);
     }
+
+    @GetMapping(value ="by-age" )
+    public List<Car> getCarAge(@RequestParam String age){
+        logger.log(Level.INFO,"Method getCarAge was used!");
+        return carRepository.findByAge(age);
+    }
+
+    @GetMapping(value = "by-option")
+    public List<Car> getCarOptions(@RequestParam String options){
+        logger.log(Level.INFO,"Method getCarOptions was used!");
+        return carRepository.findByOptions(options);
+    }
+
+
 }
 
 // get (Read)

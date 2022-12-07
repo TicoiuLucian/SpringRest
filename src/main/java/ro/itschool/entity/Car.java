@@ -3,6 +3,9 @@ package ro.itschool.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -20,9 +23,15 @@ public class Car {
 
     private String year;
 
+    private String age;
+
+    private String options;
+
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @ToString.Exclude
     private Owner owner;
+
+
 
     //TODO: Add list of carOptionals -> Roxana (OneToMany)
 }

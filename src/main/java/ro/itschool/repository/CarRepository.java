@@ -13,4 +13,9 @@ public interface CarRepository extends JpaRepository<Car, Long> {
     List<Car> findByManufacturerAndModel(String manufacturer, String model);
 
     //TODO George: add methods to filter cars by age and by options (From Roxana)
+
+    List<Car> findByAge(String age);
+
+    List<Car> findByOptions(String options);
+
 }
