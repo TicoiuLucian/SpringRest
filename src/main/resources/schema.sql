@@ -1,15 +1,18 @@
-CREATE TABLE car
+CREATE TABLE IF NOT EXISTS Car
 (
-    id INT PRIMARY KEY,
+    Pk_Car_Id INT PRIMARY KEY AUTO_INCREMENT,
     manufacturer VARCHAR(100),
     model VARCHAR(100),
-    year VARCHAR(100)
+    car_year VARCHAR(100)
 );
 
-CREATE TABLE owner
+CREATE TABLE IF NOT EXISTS Owner
 (
-    id INT PRIMARY KEY,
+    Pk_Owner_Id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
-    FOREIGN KEY (id) REFERENCES car(id)
-
+    Fk_Car_Id INT,
+    FOREIGN KEY(Fk_Car_Id) REFERENCES Car(Pk_Car_Id)
 );
+
+
+
