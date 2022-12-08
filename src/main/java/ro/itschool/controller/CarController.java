@@ -73,11 +73,11 @@ public class CarController {
         return carRepository.findByAge(age);
     }
 
-    @GetMapping(value = "by-option")
-    public List<Car> getCarOptions(@RequestParam String options){
-        logger.log(Level.INFO,"Method getCarOptions was used!");
-        return carRepository.findByOptions(options);
-    }
+//    @GetMapping(value = "by-option")
+//    public List<Car> getCarOptions(@RequestParam String options){
+//        logger.log(Level.INFO,"Method getCarOptions was used!");
+//        return carRepository.findByOptions(options);
+//    }
 
 
 }

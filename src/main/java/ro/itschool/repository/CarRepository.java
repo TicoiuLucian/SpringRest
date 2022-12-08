@@ -16,6 +16,6 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 
     List<Car> findByAge(String age);
 
-    List<Car> findByOptions(String options);
+//    List<Car> findByOptions(String options);
 
 }
