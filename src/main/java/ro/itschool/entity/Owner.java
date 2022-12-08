@@ -23,7 +23,7 @@ public class Owner {
     private String name;
 
     private Long age;
-    private Long SSN;
+    private Long ssn;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
